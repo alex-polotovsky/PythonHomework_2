@@ -15,4 +15,14 @@ def get_summ(number):
     return summ
 
 
+def get_summ_2(number):
+    num = str(number)
+    summ = 0
+    for i in num:
+        if i.isdigit():
+            summ += int(i)
+    return summ        
+
+
 print('Сумма цифр числа: ', get_summ(0.56))
+print('Сумма цифр числа: ', get_summ_2(0.56))
